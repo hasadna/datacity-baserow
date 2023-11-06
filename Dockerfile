@@ -6,3 +6,4 @@ RUN rm -rf /baserow/backend/templates
 #     touch  /baserow/backend/src/baserow_premium/__init__.py && \
 #     touch  /baserow/backend/src/baserow_enterprise/__init__.py
 COPY templates /baserow/backend/templates
+COPY env.sh /
