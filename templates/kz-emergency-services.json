@@ -1,0 +1,586 @@
+{
+    "baserow_template_version": 1,
+    "name": "תבנית הזנה שירותי חירום",
+    "icon": "iconoir-tower-warning",
+    "keywords": [
+        "כל זכות",
+        "כל שירות",
+        "שירותי חירום",
+        "חרבות ברזל"
+    ],
+    "categories": [
+        "Services", "Data Input"
+    ],
+    "export": [
+        {
+            "id": 106,
+            "name": "הזנת שירותי חירום",
+            "order": 2,
+            "type": "database",
+            "tables": [
+                {
+                    "id": 530,
+                    "name": "טבלת הזנה",
+                    "order": 1,
+                    "fields": [
+                        {
+                            "id": 4947,
+                            "type": "text",
+                            "name": "שם השירות",
+                            "order": 0,
+                            "primary": true,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 4948,
+                            "type": "multiple_select",
+                            "name": "קטגוריות",
+                            "order": 1,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3121,
+                                    "value": "איתור נעדרים",
+                                    "color": "dark-orange",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3122,
+                                    "value": "דיור ואירוח",
+                                    "color": "green",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3123,
+                                    "value": "הכוונה",
+                                    "color": "light-pink",
+                                    "order": 2
+                                },
+                                {
+                                    "id": 3124,
+                                    "value": "הסעות",
+                                    "color": "dark-gray",
+                                    "order": 3
+                                },
+                                {
+                                    "id": 3125,
+                                    "value": "מזון",
+                                    "color": "dark-red",
+                                    "order": 4
+                                },
+                                {
+                                    "id": 3126,
+                                    "value": "סיוע כספי",
+                                    "color": "light-purple",
+                                    "order": 5
+                                },
+                                {
+                                    "id": 3127,
+                                    "value": "סיוע משפטי",
+                                    "color": "dark-purple",
+                                    "order": 6
+                                },
+                                {
+                                    "id": 3128,
+                                    "value": "סיוע נפשי",
+                                    "color": "dark-brown",
+                                    "order": 7
+                                },
+                                {
+                                    "id": 3129,
+                                    "value": "עזרה לבעלי חיים",
+                                    "color": "light-green",
+                                    "order": 8
+                                },
+                                {
+                                    "id": 3130,
+                                    "value": "פעילויות חינוך והפוגה",
+                                    "color": "gray",
+                                    "order": 9
+                                },
+                                {
+                                    "id": 3131,
+                                    "value": "ציוד",
+                                    "color": "light-cyan",
+                                    "order": 10
+                                },
+                                {
+                                    "id": 3132,
+                                    "value": "שירותי בריאות",
+                                    "color": "dark-cyan",
+                                    "order": 11
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4949,
+                            "type": "long_text",
+                            "name": "תיאור השירות",
+                            "order": 2,
+                            "primary": false
+                        },
+                        {
+                            "id": 4950,
+                            "type": "single_select",
+                            "name": "סטטוס",
+                            "order": 3,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3133,
+                                    "value": "ממתין לבדיקה",
+                                    "color": "dark-yellow",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3134,
+                                    "value": "מוכן לפרסום",
+                                    "color": "darker-green",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3135,
+                                    "value": "מוקפא",
+                                    "color": "darker-cyan",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4951,
+                            "type": "long_text",
+                            "name": "אופן קבלת השירות",
+                            "order": 4,
+                            "primary": false
+                        },
+                        {
+                            "id": 4952,
+                            "type": "multiple_select",
+                            "name": "אוכלוסיית יעד",
+                            "order": 5,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3136,
+                                    "value": "כוחות הבטחון ומילואים",
+                                    "color": "darker-red",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3137,
+                                    "value": "מיעוטים",
+                                    "color": "darker-gray",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3138,
+                                    "value": "מפונים",
+                                    "color": "pink",
+                                    "order": 2
+                                },
+                                {
+                                    "id": 3139,
+                                    "value": "משפחות של נעדרים",
+                                    "color": "darker-green",
+                                    "order": 3
+                                },
+                                {
+                                    "id": 3140,
+                                    "value": "משפחות שכולות",
+                                    "color": "light-yellow",
+                                    "order": 4
+                                },
+                                {
+                                    "id": 3141,
+                                    "value": "מתמודדי נפש",
+                                    "color": "dark-blue",
+                                    "order": 5
+                                },
+                                {
+                                    "id": 3142,
+                                    "value": "נוער, ילדים וטף",
+                                    "color": "darker-blue",
+                                    "order": 6
+                                },
+                                {
+                                    "id": 3143,
+                                    "value": "נכים",
+                                    "color": "yellow",
+                                    "order": 7
+                                },
+                                {
+                                    "id": 3144,
+                                    "value": "עולים",
+                                    "color": "light-blue",
+                                    "order": 8
+                                },
+                                {
+                                    "id": 3145,
+                                    "value": "עצמאיים ועסקים קטנים",
+                                    "color": "dark-purple",
+                                    "order": 9
+                                },
+                                {
+                                    "id": 3146,
+                                    "value": "פצועים ומשפחותיהם",
+                                    "color": "dark-brown",
+                                    "order": 10
+                                },
+                                {
+                                    "id": 3147,
+                                    "value": "קשישים",
+                                    "color": "darker-purple",
+                                    "order": 11
+                                },
+                                {
+                                    "id": 3148,
+                                    "value": "שורדים",
+                                    "color": "brown",
+                                    "order": 12
+                                },
+                                {
+                                    "id": 3149,
+                                    "value": "נפגעי חרדה",
+                                    "color": "darker-pink",
+                                    "order": 13
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4953,
+                            "type": "multiple_select",
+                            "name": "שפות נוספות",
+                            "order": 6,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3150,
+                                    "value": "ערבית",
+                                    "color": "light-blue",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3151,
+                                    "value": "אנגלית",
+                                    "color": "dark-brown",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3152,
+                                    "value": "רוסית",
+                                    "color": "light-gray",
+                                    "order": 2
+                                },
+                                {
+                                    "id": 3153,
+                                    "value": "צרפתית",
+                                    "color": "darker-green",
+                                    "order": 3
+                                },
+                                {
+                                    "id": 3154,
+                                    "value": "אמהרית",
+                                    "color": "light-yellow",
+                                    "order": 4
+                                },
+                                {
+                                    "id": 3155,
+                                    "value": "ספרדית",
+                                    "color": "dark-gray",
+                                    "order": 5
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4954,
+                            "type": "text",
+                            "name": "כתובת או שם ישוב בו מסופק השירות",
+                            "order": 7,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 4955,
+                            "type": "phone_number",
+                            "name": "מספר טלפון תקני",
+                            "order": 8,
+                            "primary": false
+                        },
+                        {
+                            "id": 4956,
+                            "type": "url",
+                            "name": "דף אינטרנט",
+                            "order": 9,
+                            "primary": false
+                        },
+                        {
+                            "id": 4957,
+                            "type": "email",
+                            "name": "אימייל",
+                            "order": 10,
+                            "primary": false
+                        },
+                        {
+                            "id": 4958,
+                            "type": "text",
+                            "name": "שם המפעיל",
+                            "order": 11,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 4959,
+                            "type": "text",
+                            "name": "מספר תאגיד",
+                            "order": 12,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 4960,
+                            "type": "phone_number",
+                            "name": "מפעיל - מספר טלפון תקני",
+                            "order": 13,
+                            "primary": false
+                        },
+                        {
+                            "id": 4961,
+                            "type": "email",
+                            "name": "מפעיל - אימיייל",
+                            "order": 14,
+                            "primary": false
+                        },
+                        {
+                            "id": 4962,
+                            "type": "url",
+                            "name": "מפעיל - אתר אינטרנט",
+                            "order": 15,
+                            "primary": false
+                        },
+                        {
+                            "id": 4963,
+                            "type": "url",
+                            "name": "מקור המידע",
+                            "order": 16,
+                            "primary": false
+                        },
+                        {
+                            "id": 4964,
+                            "type": "text",
+                            "name": "מי הזין את הנתונים",
+                            "order": 17,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 4965,
+                            "type": "long_text",
+                            "name": "הערות חופשיות",
+                            "order": 18,
+                            "primary": false
+                        }
+                    ],
+                    "views": [
+                        {
+                            "id": 2140,
+                            "type": "grid",
+                            "name": "Grid",
+                            "order": 1,
+                            "ownership_type": "collaborative",
+                            "created_by": "a.dapper.dan.man@gmail.com",
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14453,
+                                    "field_id": 4947,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14451,
+                                    "field_id": 4948,
+                                    "width": 156,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14452,
+                                    "field_id": 4949,
+                                    "width": 152,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14454,
+                                    "field_id": 4950,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14455,
+                                    "field_id": 4951,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14456,
+                                    "field_id": 4952,
+                                    "width": 166,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14457,
+                                    "field_id": 4953,
+                                    "width": 152,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14458,
+                                    "field_id": 4954,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14459,
+                                    "field_id": 4955,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14460,
+                                    "field_id": 4956,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14461,
+                                    "field_id": 4957,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14462,
+                                    "field_id": 4958,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14463,
+                                    "field_id": 4959,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14464,
+                                    "field_id": 4960,
+                                    "width": 219,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "id": 1,
+                            "order": "1.00000000000000000000",
+                            "created_on": "2023-11-06T10:50:11.689370+00:00",
+                            "updated_on": "2023-11-06T10:52:11.862730+00:00",
+                            "field_4947": "",
+                            "field_4948": [],
+                            "field_4949": "",
+                            "field_4950": null,
+                            "field_4951": null,
+                            "field_4952": [],
+                            "field_4953": [],
+                            "field_4954": null,
+                            "field_4955": "",
+                            "field_4956": "",
+                            "field_4957": "",
+                            "field_4958": null,
+                            "field_4959": null,
+                            "field_4960": "",
+                            "field_4961": "",
+                            "field_4962": "",
+                            "field_4963": "",
+                            "field_4964": null,
+                            "field_4965": null
+                        },
+                        {
+                            "id": 2,
+                            "order": "2.00000000000000000000",
+                            "created_on": "2023-11-06T10:50:11.689420+00:00",
+                            "updated_on": "2023-11-06T10:52:13.933258+00:00",
+                            "field_4947": "",
+                            "field_4948": [],
+                            "field_4949": "",
+                            "field_4950": null,
+                            "field_4951": null,
+                            "field_4952": [],
+                            "field_4953": [],
+                            "field_4954": null,
+                            "field_4955": "",
+                            "field_4956": "",
+                            "field_4957": "",
+                            "field_4958": null,
+                            "field_4959": null,
+                            "field_4960": "",
+                            "field_4961": "",
+                            "field_4962": "",
+                            "field_4963": "",
+                            "field_4964": null,
+                            "field_4965": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
