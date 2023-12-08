@@ -1,4 +1,4 @@
-FROM baserow/baserow:1.21.2
+FROM ghcr.io/hasadna/datacity-baserow-base:latest
 
 RUN rm -rf /baserow/backend/templates
 # RUN mkdir  /baserow/backend/src/baserow_premium && \
