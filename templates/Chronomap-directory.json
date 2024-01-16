@@ -1,0 +1,603 @@
+{
+    "baserow_template_version": 1,
+    "name": "Chronomap Directory Template",
+    "icon": "iconoir-time-zone",
+    "keywords": [
+        "Speculative Tourism"
+    ],
+    "categories": [
+        "Art",
+        "Maps",
+        "Culture",
+        "Speculative Tourism"
+    ],
+    "export": [
+        {
+            "id": 110,
+            "name": "Chronomaps Directory",
+            "order": 1,
+            "type": "database",
+            "tables": [
+                {
+                    "id": 535,
+                    "name": "Chronomaps",
+                    "order": 1,
+                    "fields": [
+                        {
+                            "id": 5011,
+                            "type": "text",
+                            "name": "Title",
+                            "order": 0,
+                            "primary": true,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5012,
+                            "type": "long_text",
+                            "name": "Notes",
+                            "order": 1,
+                            "primary": false
+                        },
+                        {
+                            "id": 5026,
+                            "type": "number",
+                            "name": "Database_ID",
+                            "order": 4,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5027,
+                            "type": "url",
+                            "name": "Timeline_URL",
+                            "order": 5,
+                            "primary": false
+                        },
+                        {
+                            "id": 5077,
+                            "type": "text",
+                            "name": "Editor_Name",
+                            "order": 8,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5078,
+                            "type": "email",
+                            "name": "Editor_Email",
+                            "order": 9,
+                            "primary": false
+                        },
+                        {
+                            "id": 5079,
+                            "type": "long_text",
+                            "name": "Pitch",
+                            "order": 10,
+                            "primary": false
+                        },
+                        {
+                            "id": 5080,
+                            "type": "single_select",
+                            "name": "Status",
+                            "order": 11,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3295,
+                                    "value": "Pending",
+                                    "color": "darker-yellow",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3296,
+                                    "value": "Published",
+                                    "color": "darker-green",
+                                    "order": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 5084,
+                            "type": "text",
+                            "name": "Database_Token",
+                            "order": 12,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5085,
+                            "type": "text",
+                            "name": "URL_Slug",
+                            "order": 13,
+                            "primary": false,
+                            "text_default": ""
+                        }
+                    ],
+                    "views": [
+                        {
+                            "id": 2145,
+                            "type": "grid",
+                            "name": "Grid",
+                            "order": 1,
+                            "ownership_type": "collaborative",
+                            "owned_by": "mushon@shual.com",
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14517,
+                                    "field_id": 5011,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14648,
+                                    "field_id": 5080,
+                                    "width": 161,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14530,
+                                    "field_id": 5026,
+                                    "width": 159,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14652,
+                                    "field_id": 5084,
+                                    "width": 306,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14653,
+                                    "field_id": 5085,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 4,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14531,
+                                    "field_id": 5027,
+                                    "width": 243,
+                                    "hidden": false,
+                                    "order": 5,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14515,
+                                    "field_id": 5012,
+                                    "width": 400,
+                                    "hidden": false,
+                                    "order": 6,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14645,
+                                    "field_id": 5077,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 7,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14646,
+                                    "field_id": 5078,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 8,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14647,
+                                    "field_id": 5079,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 9,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2156,
+                            "type": "form",
+                            "name": "Add a timeline",
+                            "order": 2,
+                            "ownership_type": "collaborative",
+                            "owned_by": "mushon@shual.com",
+                            "public": false,
+                            "title": "Add a Chronomap",
+                            "description": "",
+                            "cover_image": null,
+                            "logo_image": null,
+                            "submit_text": "Submit",
+                            "submit_action": "MESSAGE",
+                            "submit_action_message": "",
+                            "submit_action_redirect_url": "",
+                            "field_options": [
+                                {
+                                    "id": 2882,
+                                    "field_id": 5011,
+                                    "name": "Title of your Chronomap",
+                                    "description": "",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 0,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2883,
+                                    "field_id": 5012,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": false,
+                                    "required": true,
+                                    "order": 3,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2886,
+                                    "field_id": 5026,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": false,
+                                    "required": true,
+                                    "order": 5,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2887,
+                                    "field_id": 5027,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": false,
+                                    "required": true,
+                                    "order": 6,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2890,
+                                    "field_id": 5077,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": true,
+                                    "required": false,
+                                    "order": 32767,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2891,
+                                    "field_id": 5078,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": true,
+                                    "required": false,
+                                    "order": 32767,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2892,
+                                    "field_id": 5079,
+                                    "name": "",
+                                    "description": "If this is the first time we talk, tell us what you have in mind and why this would be a great addition to this collection",
+                                    "enabled": true,
+                                    "required": false,
+                                    "order": 32767,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2894,
+                                    "field_id": 5080,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": false,
+                                    "required": true,
+                                    "order": 32767,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                }
+                            ]
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "id": 1,
+                            "order": "4.00000000000000000000",
+                            "created_on": "2023-11-07T13:08:08.758676+00:00",
+                            "updated_on": "2024-01-16T14:30:10.950952+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5011": "Sample Template",
+                            "field_5012": "A test for SciFi based chronomap",
+                            "field_5026": "112",
+                            "field_5027": "",
+                            "field_5077": null,
+                            "field_5078": "",
+                            "field_5079": null,
+                            "field_5080": 3296,
+                            "field_5084": "77rPzoLvQUoLVRXPFG8G8MmgL2WL8vZK",
+                            "field_5085": "sample"
+                        }
+                    ]
+                },
+                {
+                    "id": 538,
+                    "name": "Settings",
+                    "order": 3,
+                    "fields": [
+                        {
+                            "id": 5020,
+                            "type": "text",
+                            "name": "Key",
+                            "order": 0,
+                            "primary": true,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5021,
+                            "type": "long_text",
+                            "name": "Value",
+                            "order": 1,
+                            "primary": false
+                        },
+                        {
+                            "id": 5074,
+                            "type": "long_text",
+                            "name": "Notes",
+                            "order": 2,
+                            "primary": false
+                        },
+                        {
+                            "id": 5075,
+                            "type": "file",
+                            "name": "Image",
+                            "order": 3,
+                            "primary": false
+                        }
+                    ],
+                    "views": [
+                        {
+                            "id": 2148,
+                            "type": "grid",
+                            "name": "Grid",
+                            "order": 1,
+                            "ownership_type": "collaborative",
+                            "owned_by": "mushon@shual.com",
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14526,
+                                    "field_id": 5020,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14524,
+                                    "field_id": 5021,
+                                    "width": 400,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14643,
+                                    "field_id": 5075,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14642,
+                                    "field_id": 5074,
+                                    "width": 445,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "id": 1,
+                            "order": "1.00000000000000000000",
+                            "created_on": "2023-11-07T13:09:34.565894+00:00",
+                            "updated_on": "2023-11-30T11:42:24.300806+00:00",
+                            "field_5020": "Title",
+                            "field_5021": "Rashomon of Used Futures",
+                            "field_5074": null,
+                            "field_5075": []
+                        },
+                        {
+                            "id": 2,
+                            "order": "2.00000000000000000000",
+                            "created_on": "2023-11-07T13:09:34.565949+00:00",
+                            "updated_on": "2023-12-03T07:21:43.906664+00:00",
+                            "field_5020": "Subtitle",
+                            "field_5021": "Chronomaps",
+                            "field_5074": null,
+                            "field_5075": []
+                        },
+                        {
+                            "id": 5,
+                            "order": "2.50000000000000000000",
+                            "created_on": "2023-11-29T16:30:34.144290+00:00",
+                            "updated_on": "2023-12-12T15:27:12.478595+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5020": "Title_Image",
+                            "field_5021": "Rashomon of Used Futures",
+                            "field_5074": "Use this 640*120px SVG as a reference (Value = alt text)",
+                            "field_5075": [
+                                {
+                                    "name": "FkNqMIu7t9DdgtwUOGicRU7EYUv8JLG7_e2dbedf18636c5aaaab9955be1f811dc335facb8a0dfb5b5c34cf0c613593f01.svg",
+                                    "visible_name": "directory_title.svg",
+                                    "original_name": "FkNqMIu7t9DdgtwUOGicRU7EYUv8JLG7_e2dbedf18636c5aaaab9955be1f811dc335facb8a0dfb5b5c34cf0c613593f01.svg"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 3,
+                            "order": "3.00000000000000000000",
+                            "created_on": "2023-11-29T16:30:07.970967+00:00",
+                            "updated_on": "2023-11-30T11:44:47.395124+00:00",
+                            "field_5020": "Description",
+                            "field_5021": "We draft maps and timelines with media fragments from \\u201cused futures\\u201d based in fiction and popular culture.",
+                            "field_5074": "Supports markdown",
+                            "field_5075": []
+                        },
+                        {
+                            "id": 4,
+                            "order": "4.00000000000000000000",
+                            "created_on": "2023-11-29T16:30:16.460773+00:00",
+                            "updated_on": "2023-12-09T20:59:54.635878+00:00",
+                            "last_modified_by": "adam.kariv@gmail.com",
+                            "field_5020": "Full_Description",
+                            "field_5021": "We challenge these futures by adding other perspectives absent form the original narratives. Join us in this rashomon of our social, technological and political imaginations.\n\nMore  information about the project including external links to things like [Github](#) and to [Shenkar](#) and so on...",
+                            "field_5074": "Supports markdown",
+                            "field_5075": []
+                        },
+                        {
+                            "id": 7,
+                            "order": "4.50000000000000000000",
+                            "created_on": "2023-11-29T16:32:41.905869+00:00",
+                            "updated_on": "2023-12-12T15:28:43.869787+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5020": "Logos",
+                            "field_5021": "https://shenkar.ac.il,https://www.goethe.de",
+                            "field_5074": "comma separated links to be added to the logos images",
+                            "field_5075": [
+                                {
+                                    "name": "ZPdsNk25sFkv9H1riYxzmWCj3gYHorA1_cde7e83123527ea4d49f8d233e02c0fdbe3df9eae4ccb24d89702eb1a80ba463.png",
+                                    "visible_name": "image.png",
+                                    "original_name": "ZPdsNk25sFkv9H1riYxzmWCj3gYHorA1_cde7e83123527ea4d49f8d233e02c0fdbe3df9eae4ccb24d89702eb1a80ba463.png"
+                                },
+                                {
+                                    "name": "p5HQmBMwbe3jdZxY0HY5urAPy8JoWbRI_95683a1092ee7b93b9f9b2253a36c12877304bac01152371429757ed672237c4.png",
+                                    "visible_name": "image.png",
+                                    "original_name": "p5HQmBMwbe3jdZxY0HY5urAPy8JoWbRI_95683a1092ee7b93b9f9b2253a36c12877304bac01152371429757ed672237c4.png"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 8,
+                            "order": "6.00000000000000000000",
+                            "created_on": "2023-11-30T11:14:19.501959+00:00",
+                            "updated_on": "2023-12-12T16:23:37.317607+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5020": "Primary_Color",
+                            "field_5021": "#00A881",
+                            "field_5074": "#EA0038",
+                            "field_5075": []
+                        },
+                        {
+                            "id": 9,
+                            "order": "7.00000000000000000000",
+                            "created_on": "2023-11-30T11:14:21.900703+00:00",
+                            "updated_on": "2023-12-12T16:23:40.207478+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5020": "Secondary_Color",
+                            "field_5021": "#07367D",
+                            "field_5074": "#6E0023",
+                            "field_5075": []
+                        },
+                        {
+                            "id": 10,
+                            "order": "8.00000000000000000000",
+                            "created_on": "2023-11-30T11:24:49.897149+00:00",
+                            "updated_on": "2023-12-17T08:45:25.024140+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5020": "Zoom_From",
+                            "field_5021": "1950",
+                            "field_5074": "Default start point for all timeline (still zoomable)",
+                            "field_5075": []
+                        },
+                        {
+                            "id": 11,
+                            "order": "9.00000000000000000000",
+                            "created_on": "2023-11-30T11:25:22.938783+00:00",
+                            "updated_on": "2023-12-17T08:45:30.726187+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5020": "Zoom_Until",
+                            "field_5021": "2030",
+                            "field_5074": "Default end point for all timeline (still zoomable)",
+                            "field_5075": []
+                        },
+                        {
+                            "id": 6,
+                            "order": "10.00000000000000000000",
+                            "created_on": "2023-11-29T16:32:23.801114+00:00",
+                            "updated_on": "2023-11-30T11:41:21.913144+00:00",
+                            "field_5020": "URL",
+                            "field_5021": "",
+                            "field_5074": "where the site is hosted",
+                            "field_5075": []
+                        }
+                    ]
+                }
+            ]
+        }    
+    ]
+}

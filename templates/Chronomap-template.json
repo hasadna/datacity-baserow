@@ -1,0 +1,3553 @@
+{
+    "baserow_template_version": 1,
+    "name": "Chronomap Template",
+    "icon": "iconoir-time-zone",
+    "keywords": [
+        "Speculative Tourism"
+    ],
+    "categories": [
+        "Art",
+        "Maps",
+        "Culture",
+        "Speculative Tourism"
+    ],
+    "export": [
+        {
+            "id": 112,
+            "name": "New Chronomap",
+            "order": 1,
+            "type": "database",
+            "tables": [
+                {
+                    "id": 539,
+                    "name": "Content",
+                    "order": 1,
+                    "fields": [
+                        {
+                            "id": 5028,
+                            "type": "text",
+                            "name": "Title",
+                            "order": 0,
+                            "primary": true,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5029,
+                            "type": "date",
+                            "name": "Post_Timestamp",
+                            "order": 1,
+                            "primary": false,
+                            "date_format": "ISO",
+                            "date_include_time": false,
+                            "date_time_format": "24",
+                            "date_show_tzinfo": false,
+                            "date_force_timezone": null
+                        },
+                        {
+                            "id": 5030,
+                            "type": "single_select",
+                            "name": "Status",
+                            "order": 2,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3231,
+                                    "value": "Draft",
+                                    "color": "light-gray",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3229,
+                                    "value": "Review",
+                                    "color": "yellow",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3230,
+                                    "value": "Published",
+                                    "color": "darker-green",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": 5031,
+                            "type": "single_select",
+                            "name": "Type",
+                            "order": 3,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3232,
+                                    "value": "audio",
+                                    "color": "light-orange",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3233,
+                                    "value": "wikipedia",
+                                    "color": "blue",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3234,
+                                    "value": "instagram",
+                                    "color": "light-blue",
+                                    "order": 2
+                                },
+                                {
+                                    "id": 3235,
+                                    "value": "twitter",
+                                    "color": "light-green",
+                                    "order": 3
+                                },
+                                {
+                                    "id": 3236,
+                                    "value": "image",
+                                    "color": "green",
+                                    "order": 4
+                                },
+                                {
+                                    "id": 3237,
+                                    "value": "video",
+                                    "color": "orange",
+                                    "order": 5
+                                },
+                                {
+                                    "id": 3417,
+                                    "value": "news",
+                                    "color": "light-brown",
+                                    "order": 6
+                                }
+                            ]
+                        },
+                        {
+                            "id": 5033,
+                            "type": "text",
+                            "name": "Youtube_Video_Id",
+                            "order": 6,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5034,
+                            "type": "long_text",
+                            "name": "Content",
+                            "order": 7,
+                            "primary": false
+                        },
+                        {
+                            "id": 5035,
+                            "type": "file",
+                            "name": "Image",
+                            "order": 8,
+                            "primary": false
+                        },
+                        {
+                            "id": 5036,
+                            "type": "file",
+                            "name": "Audio",
+                            "order": 9,
+                            "primary": false
+                        },
+                        {
+                            "id": 5037,
+                            "type": "text",
+                            "name": "Name",
+                            "order": 11,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5038,
+                            "type": "text",
+                            "name": "Username",
+                            "order": 12,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5039,
+                            "type": "file",
+                            "name": "Profile_Image",
+                            "order": 13,
+                            "primary": false
+                        },
+                        {
+                            "id": 5041,
+                            "type": "number",
+                            "name": "Like_Count",
+                            "order": 15,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5042,
+                            "type": "number",
+                            "name": "Comment_Count",
+                            "order": 16,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5043,
+                            "type": "text",
+                            "name": "Link_Title",
+                            "order": 17,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5044,
+                            "type": "url",
+                            "name": "Link_Domain",
+                            "order": 18,
+                            "primary": false
+                        },
+                        {
+                            "id": 5048,
+                            "type": "text",
+                            "name": "New_Author_Name",
+                            "order": 23,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5049,
+                            "type": "email",
+                            "name": "New_Author_Email",
+                            "order": 24,
+                            "primary": false
+                        },
+                        {
+                            "id": 5051,
+                            "type": "url",
+                            "name": "Geo",
+                            "order": 26,
+                            "primary": false
+                        },
+                        {
+                            "id": 5052,
+                            "type": "link_row",
+                            "name": "Map_Layer",
+                            "order": 27,
+                            "primary": false,
+                            "link_row_table_id": 540,
+                            "link_row_related_field_id": 5058,
+                            "has_related_field": true
+                        },
+                        {
+                            "id": 5055,
+                            "type": "text",
+                            "name": "Nonce",
+                            "order": 30,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5065,
+                            "type": "link_row",
+                            "name": "Authors",
+                            "order": 31,
+                            "primary": false,
+                            "link_row_table_id": 542,
+                            "link_row_related_field_id": 5066,
+                            "has_related_field": true
+                        },
+                        {
+                            "id": 5068,
+                            "type": "long_text",
+                            "name": "Notes",
+                            "order": 32,
+                            "primary": false
+                        },
+                        {
+                            "id": 5070,
+                            "type": "date",
+                            "name": "Alt_Timestamp",
+                            "order": 33,
+                            "primary": false,
+                            "date_format": "ISO",
+                            "date_include_time": true,
+                            "date_time_format": "24",
+                            "date_show_tzinfo": false,
+                            "date_force_timezone": null
+                        },
+                        {
+                            "id": 5071,
+                            "type": "multiple_select",
+                            "name": "Tags",
+                            "order": 34,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3288,
+                                    "value": "canonical",
+                                    "color": "dark-purple",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3289,
+                                    "value": "design fiction",
+                                    "color": "light-red",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3290,
+                                    "value": "print",
+                                    "color": "pink",
+                                    "order": 2
+                                },
+                                {
+                                    "id": 3291,
+                                    "value": "news footage",
+                                    "color": "dark-orange",
+                                    "order": 3
+                                },
+                                {
+                                    "id": 3292,
+                                    "value": "environmental",
+                                    "color": "dark-blue",
+                                    "order": 4
+                                },
+                                {
+                                    "id": 3293,
+                                    "value": "technological",
+                                    "color": "darker-brown",
+                                    "order": 5
+                                },
+                                {
+                                    "id": 3294,
+                                    "value": "newspaper",
+                                    "color": "light-cyan",
+                                    "order": 6
+                                }
+                            ]
+                        },
+                        {
+                            "id": 5072,
+                            "type": "link_row",
+                            "name": "Related",
+                            "order": 35,
+                            "primary": false,
+                            "link_row_table_id": 539,
+                            "link_row_related_field_id": null,
+                            "has_related_field": false
+                        },
+                        {
+                            "id": 5189,
+                            "type": "last_modified",
+                            "name": "Last_Modified",
+                            "order": 36,
+                            "primary": false,
+                            "date_format": "ISO",
+                            "date_include_time": true,
+                            "date_time_format": "24",
+                            "date_show_tzinfo": false,
+                            "date_force_timezone": "UTC"
+                        }
+                    ],
+                    "views": [
+                        {
+                            "id": 2149,
+                            "type": "grid",
+                            "name": "Grid",
+                            "order": 1,
+                            "ownership_type": "collaborative",
+                            "owned_by": null,
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [
+                                {
+                                    "id": 1554,
+                                    "field_id": 5029,
+                                    "order": "DESC"
+                                }
+                            ],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14532,
+                                    "field_id": 5028,
+                                    "width": 239,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14550,
+                                    "field_id": 5029,
+                                    "width": 172,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14556,
+                                    "field_id": 5030,
+                                    "width": 151,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14541,
+                                    "field_id": 5031,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14533,
+                                    "field_id": 5034,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 4,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14572,
+                                    "field_id": 5068,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 5,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14534,
+                                    "field_id": 5051,
+                                    "width": 669,
+                                    "hidden": false,
+                                    "order": 6,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14535,
+                                    "field_id": 5035,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 7,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14569,
+                                    "field_id": 5065,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 8,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14538,
+                                    "field_id": 5037,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 9,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14539,
+                                    "field_id": 5038,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 10,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14540,
+                                    "field_id": 5039,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 11,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14542,
+                                    "field_id": 5033,
+                                    "width": 377,
+                                    "hidden": false,
+                                    "order": 12,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14544,
+                                    "field_id": 5041,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 13,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14545,
+                                    "field_id": 5042,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 14,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14548,
+                                    "field_id": 5043,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 15,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14549,
+                                    "field_id": 5044,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 16,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14551,
+                                    "field_id": 5036,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 17,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14640,
+                                    "field_id": 5072,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 18,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14554,
+                                    "field_id": 5048,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 19,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14555,
+                                    "field_id": 5049,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 20,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14557,
+                                    "field_id": 5055,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 21,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14559,
+                                    "field_id": 5052,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 22,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14638,
+                                    "field_id": 5070,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 23,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14639,
+                                    "field_id": 5071,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 24,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14809,
+                                    "field_id": 5189,
+                                    "width": 195,
+                                    "hidden": false,
+                                    "order": 25,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2154,
+                            "type": "grid",
+                            "name": "Basics",
+                            "order": 2,
+                            "ownership_type": "collaborative",
+                            "owned_by": null,
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14573,
+                                    "field_id": 5028,
+                                    "width": 279,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14599,
+                                    "field_id": 5030,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14585,
+                                    "field_id": 5031,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14574,
+                                    "field_id": 5029,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14604,
+                                    "field_id": 5070,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 4,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14577,
+                                    "field_id": 5051,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 5,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14578,
+                                    "field_id": 5035,
+                                    "width": 151,
+                                    "hidden": false,
+                                    "order": 6,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14586,
+                                    "field_id": 5033,
+                                    "width": 159,
+                                    "hidden": false,
+                                    "order": 7,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14575,
+                                    "field_id": 5034,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 8,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14637,
+                                    "field_id": 5071,
+                                    "width": 290,
+                                    "hidden": false,
+                                    "order": 9,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14576,
+                                    "field_id": 5068,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 10,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14581,
+                                    "field_id": 5065,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 13,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14582,
+                                    "field_id": 5037,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 14,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14583,
+                                    "field_id": 5038,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 15,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14584,
+                                    "field_id": 5039,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 16,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14588,
+                                    "field_id": 5041,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 18,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14589,
+                                    "field_id": 5042,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 19,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14592,
+                                    "field_id": 5043,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 22,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14593,
+                                    "field_id": 5044,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 23,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14594,
+                                    "field_id": 5036,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 24,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14597,
+                                    "field_id": 5048,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 27,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14598,
+                                    "field_id": 5049,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 28,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14600,
+                                    "field_id": 5055,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 29,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14602,
+                                    "field_id": 5052,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 31,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2157,
+                            "type": "gallery",
+                            "name": "Gallery",
+                            "order": 3,
+                            "ownership_type": "collaborative",
+                            "owned_by": "mushon@shual.com",
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "decorations": [],
+                            "public": false,
+                            "card_cover_image_field_id": 5035,
+                            "field_options": [
+                                {
+                                    "id": 2797,
+                                    "field_id": 5028,
+                                    "hidden": false,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2798,
+                                    "field_id": 5029,
+                                    "hidden": false,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2799,
+                                    "field_id": 5030,
+                                    "hidden": false,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2800,
+                                    "field_id": 5031,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2802,
+                                    "field_id": 5033,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2803,
+                                    "field_id": 5034,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2804,
+                                    "field_id": 5035,
+                                    "hidden": false,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2805,
+                                    "field_id": 5036,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2806,
+                                    "field_id": 5037,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2807,
+                                    "field_id": 5038,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2808,
+                                    "field_id": 5039,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2810,
+                                    "field_id": 5041,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2811,
+                                    "field_id": 5042,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2812,
+                                    "field_id": 5043,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2813,
+                                    "field_id": 5044,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2815,
+                                    "field_id": 5048,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2816,
+                                    "field_id": 5049,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2817,
+                                    "field_id": 5051,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2818,
+                                    "field_id": 5052,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2821,
+                                    "field_id": 5055,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2822,
+                                    "field_id": 5065,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2823,
+                                    "field_id": 5068,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2824,
+                                    "field_id": 5070,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2825,
+                                    "field_id": 5071,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2826,
+                                    "field_id": 5072,
+                                    "hidden": true,
+                                    "order": 32767
+                                },
+                                {
+                                    "id": 2904,
+                                    "field_id": 5189,
+                                    "hidden": true,
+                                    "order": 32767
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2155,
+                            "type": "grid",
+                            "name": "Instagram posts",
+                            "order": 4,
+                            "ownership_type": "collaborative",
+                            "owned_by": null,
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [
+                                {
+                                    "id": 1275,
+                                    "field_id": 5031,
+                                    "type": "single_select_equal",
+                                    "value": "3234",
+                                    "group": null
+                                }
+                            ],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14605,
+                                    "field_id": 5028,
+                                    "width": 279,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14606,
+                                    "field_id": 5030,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14607,
+                                    "field_id": 5031,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14636,
+                                    "field_id": 5071,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14608,
+                                    "field_id": 5029,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 4,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14609,
+                                    "field_id": 5070,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 5,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14610,
+                                    "field_id": 5051,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 6,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14611,
+                                    "field_id": 5035,
+                                    "width": 151,
+                                    "hidden": false,
+                                    "order": 7,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14612,
+                                    "field_id": 5033,
+                                    "width": 159,
+                                    "hidden": true,
+                                    "order": 8,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14613,
+                                    "field_id": 5034,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 9,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14614,
+                                    "field_id": 5068,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 10,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14617,
+                                    "field_id": 5065,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 13,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14618,
+                                    "field_id": 5037,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 14,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14619,
+                                    "field_id": 5038,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 15,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14620,
+                                    "field_id": 5039,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 16,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14622,
+                                    "field_id": 5041,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 18,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14623,
+                                    "field_id": 5042,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 19,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14626,
+                                    "field_id": 5043,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 22,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14627,
+                                    "field_id": 5044,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 23,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14628,
+                                    "field_id": 5036,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 24,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14631,
+                                    "field_id": 5048,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 27,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14632,
+                                    "field_id": 5049,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 28,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14633,
+                                    "field_id": 5055,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 29,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14635,
+                                    "field_id": 5052,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 31,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15054,
+                                    "field_id": 5072,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15055,
+                                    "field_id": 5189,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2198,
+                            "type": "grid",
+                            "name": "Twitter posts",
+                            "order": 5,
+                            "ownership_type": "collaborative",
+                            "owned_by": null,
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [
+                                {
+                                    "id": 1276,
+                                    "field_id": 5031,
+                                    "type": "single_select_equal",
+                                    "value": "3235",
+                                    "group": null
+                                }
+                            ],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 15056,
+                                    "field_id": 5028,
+                                    "width": 279,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15057,
+                                    "field_id": 5030,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15058,
+                                    "field_id": 5031,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15060,
+                                    "field_id": 5029,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15061,
+                                    "field_id": 5070,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 4,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15062,
+                                    "field_id": 5051,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 5,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15068,
+                                    "field_id": 5037,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 6,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15069,
+                                    "field_id": 5038,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 7,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15070,
+                                    "field_id": 5039,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 8,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15065,
+                                    "field_id": 5034,
+                                    "width": 281,
+                                    "hidden": false,
+                                    "order": 9,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15063,
+                                    "field_id": 5035,
+                                    "width": 151,
+                                    "hidden": false,
+                                    "order": 10,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15073,
+                                    "field_id": 5043,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 11,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15074,
+                                    "field_id": 5044,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 12,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15064,
+                                    "field_id": 5033,
+                                    "width": 159,
+                                    "hidden": true,
+                                    "order": 13,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15072,
+                                    "field_id": 5042,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 14,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15071,
+                                    "field_id": 5041,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 15,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15059,
+                                    "field_id": 5071,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 16,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15066,
+                                    "field_id": 5068,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 17,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15067,
+                                    "field_id": 5065,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 18,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15075,
+                                    "field_id": 5036,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 19,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15076,
+                                    "field_id": 5048,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 20,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15077,
+                                    "field_id": 5049,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 21,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15078,
+                                    "field_id": 5055,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 22,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15079,
+                                    "field_id": 5052,
+                                    "width": 200,
+                                    "hidden": true,
+                                    "order": 23,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15080,
+                                    "field_id": 5072,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 24,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15081,
+                                    "field_id": 5189,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 25,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2150,
+                            "type": "form",
+                            "name": "New Entry",
+                            "order": 6,
+                            "ownership_type": "collaborative",
+                            "owned_by": null,
+                            "public": true,
+                            "title": "The Details",
+                            "description": "",
+                            "cover_image": null,
+                            "logo_image": null,
+                            "submit_text": "Submit",
+                            "submit_action": "MESSAGE",
+                            "submit_action_message": "",
+                            "submit_action_redirect_url": "",
+                            "field_options": [
+                                {
+                                    "id": 2851,
+                                    "field_id": 5031,
+                                    "name": "Media Type",
+                                    "description": "",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 0,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2867,
+                                    "field_id": 5029,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 1,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2872,
+                                    "field_id": 5051,
+                                    "name": "",
+                                    "description": "https://labs.mapbox.com/location-helper\nfind the spot, the zoom and the camera angle and paste the link here:",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 2,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2858,
+                                    "field_id": 5034,
+                                    "name": "",
+                                    "description": "The text of the post goes here. Formatting tips: markdownguide.org",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 3,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "OR",
+                                    "conditions": [
+                                        {
+                                            "id": 163,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3233"
+                                        },
+                                        {
+                                            "id": 164,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3234"
+                                        },
+                                        {
+                                            "id": 165,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2855,
+                                    "field_id": 5036,
+                                    "name": "",
+                                    "description": "MP3 format",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 4,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [
+                                        {
+                                            "id": 112,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3232"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2854,
+                                    "field_id": 5035,
+                                    "name": "",
+                                    "description": "JPG, PNG or GIF format",
+                                    "enabled": true,
+                                    "required": false,
+                                    "order": 5,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "OR",
+                                    "conditions": [
+                                        {
+                                            "id": 111,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3236"
+                                        },
+                                        {
+                                            "id": 123,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3233"
+                                        },
+                                        {
+                                            "id": 124,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3234"
+                                        },
+                                        {
+                                            "id": 125,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3232"
+                                        },
+                                        {
+                                            "id": 126,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3417"
+                                        },
+                                        {
+                                            "id": 155,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2856,
+                                    "field_id": 5033,
+                                    "name": "YouTube Video Link",
+                                    "description": "Simply paste the link to the video from YouTube",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 6,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [
+                                        {
+                                            "id": 113,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3237"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2857,
+                                    "field_id": 5037,
+                                    "name": "User's Name",
+                                    "description": "This will appear as the name for the author of the post (can be made up)",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 7,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "OR",
+                                    "conditions": [
+                                        {
+                                            "id": 114,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3234"
+                                        },
+                                        {
+                                            "id": 115,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2877,
+                                    "field_id": 5038,
+                                    "name": "@handle",
+                                    "description": "This will appear as the @username for the author of the post (can be made up)",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 8,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "OR",
+                                    "conditions": [
+                                        {
+                                            "id": 117,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3234"
+                                        },
+                                        {
+                                            "id": 118,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2859,
+                                    "field_id": 5039,
+                                    "name": "Profile Image",
+                                    "description": "This will appear as the profile image for the author of the post (can be made up)",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 9,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "OR",
+                                    "conditions": [
+                                        {
+                                            "id": 160,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        },
+                                        {
+                                            "id": 161,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3234"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2861,
+                                    "field_id": 5041,
+                                    "name": "Like Count",
+                                    "description": "How many likes did this post get?",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 10,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "OR",
+                                    "conditions": [
+                                        {
+                                            "id": 156,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        },
+                                        {
+                                            "id": 157,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3234"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2862,
+                                    "field_id": 5042,
+                                    "name": "Comment Count",
+                                    "description": "How many comments did this post get?",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 11,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "OR",
+                                    "conditions": [
+                                        {
+                                            "id": 158,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3234"
+                                        },
+                                        {
+                                            "id": 159,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2865,
+                                    "field_id": 5043,
+                                    "name": "Twitter Link Title",
+                                    "description": "(optional) For a tweet that includes a link, this would be the title of the link",
+                                    "enabled": true,
+                                    "required": false,
+                                    "order": 12,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [
+                                        {
+                                            "id": 162,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2866,
+                                    "field_id": 5044,
+                                    "name": "Twitter Link Domain",
+                                    "description": "(optional) For a tweet that includes a link, this would be the domain of the link",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 13,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [
+                                        {
+                                            "id": 167,
+                                            "field": 5031,
+                                            "type": "single_select_equal",
+                                            "value": "3235"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2850,
+                                    "field_id": 5028,
+                                    "name": "Title",
+                                    "description": "Keep it short, it's only for the label",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 14,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2881,
+                                    "field_id": 5071,
+                                    "name": "",
+                                    "description": "(optional) Choose tags that could fit this (the editors may add some extra ones)",
+                                    "enabled": true,
+                                    "required": false,
+                                    "order": 15,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2879,
+                                    "field_id": 5068,
+                                    "name": "",
+                                    "description": "(optional) Free notes that would appear about the post (credits and extra links for example)",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 16,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2893,
+                                    "field_id": 5072,
+                                    "name": "",
+                                    "description": "(optional) Only if this is responding to or directly connected to another post or two, mark that here",
+                                    "enabled": true,
+                                    "required": false,
+                                    "order": 17,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "multiple"
+                                },
+                                {
+                                    "id": 2878,
+                                    "field_id": 5065,
+                                    "name": "Who are you?",
+                                    "description": "Who to credit this with?",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 18,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "OR",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2869,
+                                    "field_id": 5048,
+                                    "name": "Hi there, what's your name?",
+                                    "description": "We will use it to credit you",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 19,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [
+                                        {
+                                            "id": 129,
+                                            "field": 5065,
+                                            "type": "link_row_has",
+                                            "value": "3"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2870,
+                                    "field_id": 5049,
+                                    "name": "What's your email address?",
+                                    "description": "We won't publish it, but we need it to let you know when your post gets published",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 20,
+                                    "show_when_matching_conditions": true,
+                                    "condition_type": "AND",
+                                    "conditions": [
+                                        {
+                                            "id": 128,
+                                            "field": 5065,
+                                            "type": "link_row_has",
+                                            "value": "3"
+                                        }
+                                    ],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2874,
+                                    "field_id": 5055,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 21,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2852,
+                                    "field_id": 5052,
+                                    "name": "Map Style",
+                                    "description": "",
+                                    "enabled": false,
+                                    "required": false,
+                                    "order": 22,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2873,
+                                    "field_id": 5030,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": true,
+                                    "required": true,
+                                    "order": 23,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2880,
+                                    "field_id": 5070,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": false,
+                                    "required": false,
+                                    "order": 24,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                },
+                                {
+                                    "id": 2957,
+                                    "field_id": 5189,
+                                    "name": "",
+                                    "description": "",
+                                    "enabled": false,
+                                    "required": true,
+                                    "order": 25,
+                                    "show_when_matching_conditions": false,
+                                    "condition_type": "AND",
+                                    "conditions": [],
+                                    "field_component": "default"
+                                }
+                            ]
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "id": 15,
+                            "order": "2.00000000000000000000",
+                            "created_on": "2023-11-28T15:52:13.974614+00:00",
+                            "updated_on": "2024-01-16T14:33:47.566096+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5028": "Save the Clock Tower",
+                            "field_5029": "1985-10-25",
+                            "field_5030": 3231,
+                            "field_5031": 3236,
+                            "field_5033": "",
+                            "field_5034": "",
+                            "field_5035": [
+                                {
+                                    "name": "ayBGaE5UVgPocPq6GjZqVIM0efaFfA0R_407157ded9022b1d248b99133aa55972610c2e5cb5f8e79fdfbd62c264dd28cf.jpg",
+                                    "visible_name": "il_1588xN.2627746944_m27j.jpg",
+                                    "original_name": "ayBGaE5UVgPocPq6GjZqVIM0efaFfA0R_407157ded9022b1d248b99133aa55972610c2e5cb5f8e79fdfbd62c264dd28cf.jpg"
+                                }
+                            ],
+                            "field_5036": [],
+                            "field_5037": "",
+                            "field_5038": "",
+                            "field_5039": [],
+                            "field_5041": null,
+                            "field_5042": null,
+                            "field_5043": "",
+                            "field_5044": "",
+                            "field_5048": "",
+                            "field_5049": "",
+                            "field_5051": "https://labs.mapbox.com/location-helper/#20.03/34.1413812/-118.3496912/82.1/56",
+                            "field_5052": [],
+                            "field_5055": "",
+                            "field_5065": [
+                                1
+                            ],
+                            "field_5068": "This is a sample image post based on the Back to The Future narrative\n\nThis flyer was distributed following the lightning strike that broke the clock on the Hill Valley court tower.",
+                            "field_5070": "1985-07-02T21:00:00+00:00",
+                            "field_5071": [
+                                3288,
+                                3290
+                            ],
+                            "field_5072": [
+                                21
+                            ],
+                            "field_5189": null
+                        },
+                        {
+                            "id": 17,
+                            "order": "3.00000000000000000000",
+                            "created_on": "2023-11-29T09:24:54.050330+00:00",
+                            "updated_on": "2024-01-16T14:33:21.834666+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5028": "The Lybians",
+                            "field_5029": "1985-10-26",
+                            "field_5030": 3230,
+                            "field_5031": 3237,
+                            "field_5033": "https://youtu.be/K_N_xCHjFR4",
+                            "field_5034": "",
+                            "field_5035": [],
+                            "field_5036": [],
+                            "field_5037": "Marty",
+                            "field_5038": null,
+                            "field_5039": [],
+                            "field_5041": null,
+                            "field_5042": null,
+                            "field_5043": null,
+                            "field_5044": "",
+                            "field_5048": null,
+                            "field_5049": "",
+                            "field_5051": "https://labs.mapbox.com/location-helper/#19.82/33.9914479/-117.9265353/-44.3/65",
+                            "field_5052": [
+                                1
+                            ],
+                            "field_5055": null,
+                            "field_5065": [
+                                1
+                            ],
+                            "field_5068": "This is a sample YouTube post based on the Back to The Future narrative\n\nReference: [https://backtothefuture.fandom.com/wiki/The_Libyans]",
+                            "field_5070": "1985-07-02T21:00:00+00:00",
+                            "field_5071": [
+                                3288
+                            ],
+                            "field_5072": [
+                                18
+                            ],
+                            "field_5189": null
+                        },
+                        {
+                            "id": 18,
+                            "order": "4.00000000000000000000",
+                            "created_on": "2023-11-29T11:07:46.867770+00:00",
+                            "updated_on": "2024-01-16T14:34:22.593351+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5028": "Missing Plutonium from PNNL",
+                            "field_5029": "1985-10-17",
+                            "field_5030": 3231,
+                            "field_5031": 3237,
+                            "field_5033": "https://youtu.be/2xL74O4hsqE?t=113",
+                            "field_5034": null,
+                            "field_5035": [],
+                            "field_5036": [],
+                            "field_5037": "Mushon",
+                            "field_5038": null,
+                            "field_5039": [],
+                            "field_5041": null,
+                            "field_5042": null,
+                            "field_5043": null,
+                            "field_5044": "",
+                            "field_5048": null,
+                            "field_5049": "",
+                            "field_5051": "https://labs.mapbox.com/location-helper/#17.68/46.345483/-119.278067/-44.3/65",
+                            "field_5052": [],
+                            "field_5055": null,
+                            "field_5065": [
+                                1
+                            ],
+                            "field_5068": "This is a sample YouTube post based on the Back to The Future narrative",
+                            "field_5070": "1985-07-02T21:00:00+00:00",
+                            "field_5071": [
+                                3288,
+                                3291
+                            ],
+                            "field_5072": [
+                                17
+                            ],
+                            "field_5189": null
+                        },
+                        {
+                            "id": 19,
+                            "order": "5.00000000000000000000",
+                            "created_on": "2023-11-29T14:16:21.417692+00:00",
+                            "updated_on": "2024-01-16T14:34:00.819294+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5028": "Mr. Fusion Home Energy Reactor",
+                            "field_5029": "2015-10-21",
+                            "field_5030": 3231,
+                            "field_5031": 3234,
+                            "field_5033": "",
+                            "field_5034": "I just fed my 8 month old baby's dipper to my car's Mr. Fusion Home Energy Reactor. The good news: \\ud83d\\udd0b it works (+8% to battery). The bad news: \\u2622\\ufe0f\\ud83d\\udca9 Nuclear shit stinks like hell!!!",
+                            "field_5035": [
+                                {
+                                    "name": "8joUbAUVXWEPsTfMBomBEWJrcBm8HMMt_4a5bfadec2f4d74fe4c8a1d31597962fe9c59bbad62942e4aa6375789c50f95b.jpeg",
+                                    "visible_name": "mr.fusion.jpeg",
+                                    "original_name": "8joUbAUVXWEPsTfMBomBEWJrcBm8HMMt_4a5bfadec2f4d74fe4c8a1d31597962fe9c59bbad62942e4aa6375789c50f95b.jpeg"
+                                }
+                            ],
+                            "field_5036": [],
+                            "field_5037": "Jenny Bowler",
+                            "field_5038": "Jeno86",
+                            "field_5039": [
+                                {
+                                    "name": "HuP5amJPg6ME4P1x4VYhtObcg14WYWkb_2f57d27c17676c58aa411e0f684a306ad060b265485ffcdc1ca78891cae52e53.jpeg",
+                                    "visible_name": "facestudio_30s_latin_american_female_343619375.jpeg",
+                                    "original_name": "HuP5amJPg6ME4P1x4VYhtObcg14WYWkb_2f57d27c17676c58aa411e0f684a306ad060b265485ffcdc1ca78891cae52e53.jpeg"
+                                }
+                            ],
+                            "field_5041": "19",
+                            "field_5042": "3",
+                            "field_5043": "",
+                            "field_5044": "",
+                            "field_5048": "",
+                            "field_5049": "",
+                            "field_5051": "https://labs.mapbox.com/location-helper/#21.13/34.1505646/-118.3426785/34.1/57",
+                            "field_5052": [],
+                            "field_5055": "",
+                            "field_5065": [
+                                1
+                            ],
+                            "field_5068": "This is a sample instagram post based on the Back to The Future narrative\n\n*CC BY SA* Photo by [Steve Rainwater on Flickr](https://www.flickr.com/photos/8386148@N06/35701964760)",
+                            "field_5070": "1985-07-02T21:00:00+00:00",
+                            "field_5071": [
+                                3289,
+                                3292,
+                                3293
+                            ],
+                            "field_5072": [],
+                            "field_5189": null
+                        },
+                        {
+                            "id": 21,
+                            "order": "6.00000000000000000000",
+                            "created_on": "2023-11-29T16:14:55.737067+00:00",
+                            "updated_on": "2024-01-16T14:32:49.169053+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5028": "Clock Tower Struck by Lightning",
+                            "field_5029": "1955-11-14",
+                            "field_5030": 3230,
+                            "field_5031": 3235,
+                            "field_5033": "",
+                            "field_5034": "My report about last night's storm hits the front page!",
+                            "field_5035": [
+                                {
+                                    "name": "vZFA1qBNzzTZ3JbwhZvFolQXBBP3hcLx_eb3f191da9a0c316541513b86012605738a0acd02fdee5ac5c4792d66282361f.png",
+                                    "visible_name": "B2TF_clock tower struck by lightning.png",
+                                    "original_name": "vZFA1qBNzzTZ3JbwhZvFolQXBBP3hcLx_eb3f191da9a0c316541513b86012605738a0acd02fdee5ac5c4792d66282361f.png"
+                                }
+                            ],
+                            "field_5036": [],
+                            "field_5037": "Sam Johnson",
+                            "field_5038": "telegraph_sam",
+                            "field_5039": [
+                                {
+                                    "name": "OL7tytXE4zc6eTHy8pIhrq1ch9s1H3xI_a841cc5bc1a8044d528cc178f64822ef618d06e7e0c24e67643dddb3b947cc80.png",
+                                    "visible_name": "facestudio_50s_european_male_2767239532.png",
+                                    "original_name": "OL7tytXE4zc6eTHy8pIhrq1ch9s1H3xI_a841cc5bc1a8044d528cc178f64822ef618d06e7e0c24e67643dddb3b947cc80.png"
+                                }
+                            ],
+                            "field_5041": "78",
+                            "field_5042": "2",
+                            "field_5043": "",
+                            "field_5044": "",
+                            "field_5048": "",
+                            "field_5049": "",
+                            "field_5051": "https://labs.mapbox.com/location-helper/#20.03/34.1413812/-118.3496912/82.1/56",
+                            "field_5052": [],
+                            "field_5055": "",
+                            "field_5065": [
+                                1
+                            ],
+                            "field_5068": "This is a sample twitter post based on the Back to The Future narrative",
+                            "field_5070": "1985-07-02T21:00:00+00:00",
+                            "field_5071": [
+                                3294
+                            ],
+                            "field_5072": [
+                                15
+                            ],
+                            "field_5189": null
+                        }
+                    ]
+                },
+                {
+                    "id": 540,
+                    "name": "MapLayers",
+                    "order": 2,
+                    "fields": [
+                        {
+                            "id": 5056,
+                            "type": "text",
+                            "name": "Name",
+                            "order": 0,
+                            "primary": true,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5057,
+                            "type": "multiple_select",
+                            "name": "On_Layers",
+                            "order": 1,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3251,
+                                    "value": "mediterranean_texture",
+                                    "color": "blue",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3252,
+                                    "value": "mediterranean_cover",
+                                    "color": "light-blue",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3253,
+                                    "value": "mediterranean_outline",
+                                    "color": "light-green",
+                                    "order": 2
+                                },
+                                {
+                                    "id": 3254,
+                                    "value": "atlantropa",
+                                    "color": "green",
+                                    "order": 3
+                                },
+                                {
+                                    "id": 3255,
+                                    "value": "atlantropa_outline",
+                                    "color": "light-orange",
+                                    "order": 4
+                                },
+                                {
+                                    "id": 3256,
+                                    "value": "NEED-dash",
+                                    "color": "light-gray",
+                                    "order": 5
+                                },
+                                {
+                                    "id": 3257,
+                                    "value": "NEED-fill",
+                                    "color": "light-red",
+                                    "order": 6
+                                },
+                                {
+                                    "id": 3258,
+                                    "value": "NEED-case",
+                                    "color": "green",
+                                    "order": 7
+                                },
+                                {
+                                    "id": 3259,
+                                    "value": "water",
+                                    "color": "dark-blue",
+                                    "order": 8
+                                },
+                                {
+                                    "id": 3260,
+                                    "value": "snow",
+                                    "color": "orange",
+                                    "order": 9
+                                },
+                                {
+                                    "id": 3261,
+                                    "value": "wood",
+                                    "color": "light-red",
+                                    "order": 10
+                                },
+                                {
+                                    "id": 3262,
+                                    "value": "crub",
+                                    "color": "dark-blue",
+                                    "order": 11
+                                },
+                                {
+                                    "id": 3263,
+                                    "value": "grass",
+                                    "color": "light-orange",
+                                    "order": 12
+                                },
+                                {
+                                    "id": 3264,
+                                    "value": "crop",
+                                    "color": "green",
+                                    "order": 13
+                                },
+                                {
+                                    "id": 3265,
+                                    "value": "taxi-path-fill",
+                                    "color": "blue",
+                                    "order": 14
+                                },
+                                {
+                                    "id": 3266,
+                                    "value": "taxi-path-base",
+                                    "color": "orange",
+                                    "order": 15
+                                },
+                                {
+                                    "id": 3267,
+                                    "value": "thessaloniki-new-airport-outline",
+                                    "color": "orange",
+                                    "order": 16
+                                },
+                                {
+                                    "id": 3268,
+                                    "value": "thessaloniki-new-airport",
+                                    "color": "red",
+                                    "order": 17
+                                },
+                                {
+                                    "id": 3269,
+                                    "value": "taxi-destination-label",
+                                    "color": "light-green",
+                                    "order": 18
+                                },
+                                {
+                                    "id": 3270,
+                                    "value": "taxi-destination-point",
+                                    "color": "light-gray",
+                                    "order": 19
+                                },
+                                {
+                                    "id": 3271,
+                                    "value": "thessaloniki-new-airport-outline-linebase",
+                                    "color": "light-orange",
+                                    "order": 20
+                                },
+                                {
+                                    "id": 3272,
+                                    "value": "satellite-night",
+                                    "color": "light-gray",
+                                    "order": 21
+                                },
+                                {
+                                    "id": 3273,
+                                    "value": "sky-night",
+                                    "color": "light-blue",
+                                    "order": 22
+                                },
+                                {
+                                    "id": 3274,
+                                    "value": "GGD_outline",
+                                    "color": "dark-blue",
+                                    "order": 23
+                                },
+                                {
+                                    "id": 3275,
+                                    "value": "GGD_fill",
+                                    "color": "dark-blue",
+                                    "order": 24
+                                },
+                                {
+                                    "id": 3276,
+                                    "value": "GGD_pattern",
+                                    "color": "blue",
+                                    "order": 25
+                                },
+                                {
+                                    "id": 3277,
+                                    "value": "GGD_WIP_outline",
+                                    "color": "dark-blue",
+                                    "order": 26
+                                },
+                                {
+                                    "id": 3278,
+                                    "value": "GGD_WIP_pattern",
+                                    "color": "dark-blue",
+                                    "order": 27
+                                },
+                                {
+                                    "id": 3279,
+                                    "value": "GGD_WIP_fill",
+                                    "color": "light-blue",
+                                    "order": 28
+                                },
+                                {
+                                    "id": 3280,
+                                    "value": "big city labels",
+                                    "color": "blue",
+                                    "order": 29
+                                },
+                                {
+                                    "id": 3281,
+                                    "value": "hyperloop_dash",
+                                    "color": "light-blue",
+                                    "order": 30
+                                },
+                                {
+                                    "id": 3282,
+                                    "value": "hyperloop_base",
+                                    "color": "dark-blue",
+                                    "order": 31
+                                },
+                                {
+                                    "id": 3283,
+                                    "value": "hyperloop_supports",
+                                    "color": "green",
+                                    "order": 32
+                                },
+                                {
+                                    "id": 3284,
+                                    "value": "whiteout",
+                                    "color": "green",
+                                    "order": 33
+                                }
+                            ]
+                        },
+                        {
+                            "id": 5058,
+                            "type": "link_row",
+                            "name": "Content",
+                            "order": 3,
+                            "primary": false,
+                            "link_row_table_id": 539,
+                            "link_row_related_field_id": 5052,
+                            "has_related_field": true
+                        },
+                        {
+                            "id": 5391,
+                            "type": "text",
+                            "name": "Notice",
+                            "order": 4,
+                            "primary": false,
+                            "text_default": "This feature is still pending (Jan 26, 2024)"
+                        }
+                    ],
+                    "views": [
+                        {
+                            "id": 2151,
+                            "type": "grid",
+                            "name": "Grid",
+                            "order": 1,
+                            "ownership_type": "collaborative",
+                            "owned_by": null,
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14560,
+                                    "field_id": 5056,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15211,
+                                    "field_id": 5391,
+                                    "width": 321,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14561,
+                                    "field_id": 5057,
+                                    "width": 213,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14562,
+                                    "field_id": 5058,
+                                    "width": 429,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "id": 1,
+                            "order": "1.00000000000000000000",
+                            "created_on": "2022-08-09T16:45:33+00:00",
+                            "updated_on": "2023-11-03T08:36:44.284827+00:00",
+                            "field_5056": "night",
+                            "field_5057": [
+                                3272,
+                                3273
+                            ],
+                            "field_5058": [
+                                1,
+                                7,
+                                17
+                            ],
+                            "field_5391": "This feature is still pending (Jan 26, 2024)"
+                        },
+                        {
+                            "id": 2,
+                            "order": "2.00000000000000000000",
+                            "created_on": "2022-08-14T08:12:26+00:00",
+                            "updated_on": "2023-11-03T08:36:44.292639+00:00",
+                            "field_5056": "default",
+                            "field_5057": [
+                                3284
+                            ],
+                            "field_5058": [],
+                            "field_5391": "This feature is still pending (Jan 26, 2024)"
+                        },
+                        {
+                            "id": 3,
+                            "order": "3.00000000000000000000",
+                            "created_on": "2023-11-29T13:58:32.761542+00:00",
+                            "updated_on": "2023-11-29T13:59:12.235598+00:00",
+                            "field_5056": "satellite",
+                            "field_5057": [
+                                3272
+                            ],
+                            "field_5058": [],
+                            "field_5391": "This feature is still pending (Jan 26, 2024)"
+                        }
+                    ]
+                },
+                {
+                    "id": 561,
+                    "name": "Camera",
+                    "order": 3,
+                    "fields": [
+                        {
+                            "id": 5270,
+                            "type": "text",
+                            "name": "Name",
+                            "order": 0,
+                            "primary": true,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5272,
+                            "type": "text",
+                            "name": "Target_Route",
+                            "order": 2,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5273,
+                            "type": "text",
+                            "name": "Notes",
+                            "order": 3,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5274,
+                            "type": "file",
+                            "name": "Pointer",
+                            "order": 4,
+                            "primary": false
+                        },
+                        {
+                            "id": 5275,
+                            "type": "boolean",
+                            "name": "Pointer_Path_Orientation",
+                            "order": 5,
+                            "primary": false
+                        },
+                        {
+                            "id": 5276,
+                            "type": "number",
+                            "name": "Circle_Duration",
+                            "order": 6,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5277,
+                            "type": "number",
+                            "name": "Pointer_Max_Size",
+                            "order": 7,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5279,
+                            "type": "single_select",
+                            "name": "Camera_Preset",
+                            "order": 9,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3548,
+                                    "value": "Static",
+                                    "color": "dark-brown",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3491,
+                                    "value": "Rotate around a point",
+                                    "color": "light-red",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3549,
+                                    "value": "Rotate around a route",
+                                    "color": "light-purple",
+                                    "order": 2
+                                },
+                                {
+                                    "id": 3490,
+                                    "value": "Follow a route",
+                                    "color": "dark-cyan",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        {
+                            "id": 5280,
+                            "type": "number",
+                            "name": "Zoom",
+                            "order": 10,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5281,
+                            "type": "number",
+                            "name": "Pitch",
+                            "order": 11,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5282,
+                            "type": "number",
+                            "name": "Altitude",
+                            "order": 12,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5283,
+                            "type": "text",
+                            "name": "Camera_Route",
+                            "order": 13,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5336,
+                            "type": "text",
+                            "name": "Camera_Position",
+                            "order": 14,
+                            "primary": false,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5337,
+                            "type": "number",
+                            "name": "Route_Duration",
+                            "order": 15,
+                            "primary": false,
+                            "number_decimal_places": 0,
+                            "number_negative": false
+                        },
+                        {
+                            "id": 5390,
+                            "type": "text",
+                            "name": "Notice",
+                            "order": 16,
+                            "primary": false,
+                            "text_default": "This feature is still pending (Jan 26, 2024)"
+                        }
+                    ],
+                    "views": [
+                        {
+                            "id": 2187,
+                            "type": "grid",
+                            "name": "Grid",
+                            "order": 1,
+                            "ownership_type": "collaborative",
+                            "owned_by": "mushon@shual.com",
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14938,
+                                    "field_id": 5270,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15210,
+                                    "field_id": 5390,
+                                    "width": 475,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14947,
+                                    "field_id": 5279,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15052,
+                                    "field_id": 5336,
+                                    "width": 127,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14950,
+                                    "field_id": 5282,
+                                    "width": 132,
+                                    "hidden": false,
+                                    "order": 4,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14944,
+                                    "field_id": 5276,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 5,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14940,
+                                    "field_id": 5272,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 6,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 15053,
+                                    "field_id": 5337,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 7,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14949,
+                                    "field_id": 5281,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 8,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14948,
+                                    "field_id": 5280,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 9,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14951,
+                                    "field_id": 5283,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 10,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14941,
+                                    "field_id": 5273,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 11,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14942,
+                                    "field_id": 5274,
+                                    "width": 127,
+                                    "hidden": false,
+                                    "order": 12,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14945,
+                                    "field_id": 5277,
+                                    "width": 179,
+                                    "hidden": false,
+                                    "order": 13,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14943,
+                                    "field_id": 5275,
+                                    "width": 168,
+                                    "hidden": false,
+                                    "order": 14,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "id": 1,
+                            "order": "1.00000000000000000000",
+                            "created_on": "2023-12-27T14:27:46.741523+00:00",
+                            "updated_on": "2023-12-27T16:17:53.601659+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5270": "Rotate around point",
+                            "field_5272": "",
+                            "field_5273": "Draw a line on https://geojson.io/ and paste it in the field",
+                            "field_5274": [],
+                            "field_5275": "false",
+                            "field_5276": "10",
+                            "field_5277": null,
+                            "field_5279": 3491,
+                            "field_5280": "15",
+                            "field_5281": "15",
+                            "field_5282": "3000",
+                            "field_5283": "",
+                            "field_5336": "500",
+                            "field_5337": null,
+                            "field_5390": "This feature is still pending (Jan 26, 2024)"
+                        },
+                        {
+                            "id": 2,
+                            "order": "2.00000000000000000000",
+                            "created_on": "2023-12-27T14:27:46.741590+00:00",
+                            "updated_on": "2023-12-27T16:17:58.054222+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5270": "From home to school",
+                            "field_5272": "{\n  \"type\": \"FeatureCollection\",\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"properties\": {},\n      \"geometry\": {\n        \"coordinates\": [\n          [\n            34.77633941816987,\n            32.07416871762358\n          ],\n          [\n            34.776064753514305,\n            32.07371548552406\n          ],\n          [\n            34.775414231959616,\n            32.07403397317967\n          ],\n          [\n            34.77688874748219,\n            32.076238857291116\n          ],\n          [\n            34.77826207076359,\n            32.07799047732142\n          ],\n          [\n            34.77904270016566,\n            32.0787022472509\n          ],\n          [\n            34.77882585964704,\n            32.078910477945925\n          ],\n          [\n            34.77946192516657,\n            32.07953516718706\n          ],\n          [\n            34.78134120965612,\n            32.07951066965023\n          ],\n          [\n            34.781379377758896,\n            32.082287524306224\n          ],\n          [\n            34.78148057000007,\n            32.08332863220383\n          ],\n          [\n            34.78188533896707,\n            32.08528833254407\n          ],\n          [\n            34.78233347473815,\n            32.08792161658525\n          ],\n          [\n            34.782694875600896,\n            32.08808083580351\n          ],\n          [\n            34.78620769199344,\n            32.087394966423105\n          ],\n          [\n            34.78616432388924,\n            32.08711326857957\n          ]\n        ],\n        \"type\": \"LineString\"\n      }\n    }\n  ]\n}",
+                            "field_5273": "Draw a line on https://geojson.io/ and paste it in the field",
+                            "field_5274": [
+                                {
+                                    "name": "A8Vfn91cyjbY9bQkKeHo19Dt7B0pqrR1_9a0b6c08d2b26bdfe6d826c46b1b64dc3d10eedce324b5981fed549e9e651e1c.png",
+                                    "visible_name": "taxi.png",
+                                    "original_name": "A8Vfn91cyjbY9bQkKeHo19Dt7B0pqrR1_9a0b6c08d2b26bdfe6d826c46b1b64dc3d10eedce324b5981fed549e9e651e1c.png"
+                                }
+                            ],
+                            "field_5275": "true",
+                            "field_5276": "30",
+                            "field_5277": "64",
+                            "field_5279": 3490,
+                            "field_5280": "16",
+                            "field_5281": "16",
+                            "field_5282": "1000",
+                            "field_5283": "{   \"type\": \"FeatureCollection\",   \"features\": [     {       \"type\": \"Feature\",       \"properties\": {},       \"geometry\": {         \"coordinates\": [           [             34.77575810112836,             32.07214899359242           ],           [             34.775156885306814,             32.07332074026763           ],           [             34.77469595317615,             32.07467926834016           ],           [             34.778142923886264,             32.07962074394051           ],           [             34.780387462953314,             32.080367885388966           ],           [             34.78269212360337,             32.08196403075105           ],           [             34.783166995488045,             32.086397273304186           ],           [             34.7841890623838,             32.088978090142504           ],           [             34.78721518201968,             32.08846872417139           ],           [             34.786613966198104,             32.08721227596959           ]         ],         \"type\": \"LineString\"       }     }   ] }",
+                            "field_5336": null,
+                            "field_5337": null,
+                            "field_5390": "This feature is still pending (Jan 26, 2024)"
+                        },
+                        {
+                            "id": 3,
+                            "order": "3.00000000000000000000",
+                            "created_on": "2023-12-27T14:27:46.741620+00:00",
+                            "updated_on": "2023-12-27T16:17:58.054301+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5270": "From school to home",
+                            "field_5272": "{\n  \"type\": \"FeatureCollection\",\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"properties\": {},\n      \"geometry\": {\n        \"coordinates\": [\n          [\n            34.78608659035251,\n            32.08710700705659\n          ],\n          [\n            34.78586712791122,\n            32.0850785734639\n          ],\n          [\n            34.785667616601756,\n            32.08452074633283\n          ],\n          [\n            34.78175719493558,\n            32.085349033877606\n          ],\n          [\n            34.78129831892457,\n            32.08315151984851\n          ],\n          [\n            34.781218514400734,\n            32.0814779929553\n          ],\n          [\n            34.7813182700547,\n            32.08081871637209\n          ],\n          [\n            34.78123846553089,\n            32.07953395859913\n          ],\n          [\n            34.781218514400734,\n            32.0778096500505\n          ],\n          [\n            34.7813182700547,\n            32.07723487330621\n          ],\n          [\n            34.78163749763692,\n            32.07524003142075\n          ],\n          [\n            34.78179710668451,\n            32.07348182999496\n          ],\n          [\n            34.781876911208315,\n            32.07108115422028\n          ],\n          [\n            34.78000150489905,\n            32.071655969652085\n          ],\n          [\n            34.778565023470634,\n            32.07248437377096\n          ],\n          [\n            34.775791816269475,\n            32.073836854161\n          ]\n        ],\n        \"type\": \"LineString\"\n      }\n    }\n  ]\n}",
+                            "field_5273": "Draw a line on https://geojson.io/ and paste it in the field",
+                            "field_5274": [
+                                {
+                                    "name": "AGQpw3NqxGKjdXMeIraT34IFqpkxnYNX_b87af7efaed79116d42c62f5c3888f52be14ae039004dc76a14cf24a9c7ce076.png",
+                                    "visible_name": "schoolbus.png",
+                                    "original_name": "AGQpw3NqxGKjdXMeIraT34IFqpkxnYNX_b87af7efaed79116d42c62f5c3888f52be14ae039004dc76a14cf24a9c7ce076.png"
+                                }
+                            ],
+                            "field_5275": "true",
+                            "field_5276": null,
+                            "field_5277": "64",
+                            "field_5279": 3490,
+                            "field_5280": "15",
+                            "field_5281": "15",
+                            "field_5282": "1500",
+                            "field_5283": "",
+                            "field_5336": null,
+                            "field_5337": null,
+                            "field_5390": "This feature is still pending (Jan 26, 2024)"
+                        }
+                    ]
+                },
+                {
+                    "id": 542,
+                    "name": "Authors",
+                    "order": 4,
+                    "fields": [
+                        {
+                            "id": 5062,
+                            "type": "text",
+                            "name": "Name",
+                            "order": 0,
+                            "primary": true,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5063,
+                            "type": "long_text",
+                            "name": "Notes",
+                            "order": 1,
+                            "primary": false
+                        },
+                        {
+                            "id": 5064,
+                            "type": "single_select",
+                            "name": "Status",
+                            "order": 2,
+                            "primary": false,
+                            "select_options": [
+                                {
+                                    "id": 3285,
+                                    "value": "Pending",
+                                    "color": "dark-yellow",
+                                    "order": 0
+                                },
+                                {
+                                    "id": 3286,
+                                    "value": "Contributor",
+                                    "color": "light-cyan",
+                                    "order": 1
+                                },
+                                {
+                                    "id": 3287,
+                                    "value": "Editor",
+                                    "color": "cyan",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": 5066,
+                            "type": "link_row",
+                            "name": "Content",
+                            "order": 3,
+                            "primary": false,
+                            "link_row_table_id": 539,
+                            "link_row_related_field_id": 5065,
+                            "has_related_field": true
+                        },
+                        {
+                            "id": 5067,
+                            "type": "email",
+                            "name": "Email",
+                            "order": 4,
+                            "primary": false
+                        }
+                    ],
+                    "views": [
+                        {
+                            "id": 2153,
+                            "type": "grid",
+                            "name": "Grid",
+                            "order": 1,
+                            "ownership_type": "collaborative",
+                            "owned_by": "mushon@shual.com",
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14568,
+                                    "field_id": 5062,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 0,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14567,
+                                    "field_id": 5064,
+                                    "width": 150,
+                                    "hidden": false,
+                                    "order": 1,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14571,
+                                    "field_id": 5067,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 2,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14570,
+                                    "field_id": 5066,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 3,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14566,
+                                    "field_id": 5063,
+                                    "width": 367,
+                                    "hidden": false,
+                                    "order": 4,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "id": 3,
+                            "order": "0.50000000000000000000",
+                            "created_on": "2023-11-29T11:17:20.614496+00:00",
+                            "updated_on": "2023-12-04T08:24:05.635464+00:00",
+                            "field_5062": "I'm a new author",
+                            "field_5063": "This is the default account for new contributions. Accepted contributions should be assigned a \"contributor\" role",
+                            "field_5064": 3285,
+                            "field_5066": [
+                                22,
+                                23,
+                                25
+                            ],
+                            "field_5067": ""
+                        },
+                        {
+                            "id": 1,
+                            "order": "1.00000000000000000000",
+                            "created_on": "2023-11-28T16:08:25.230702+00:00",
+                            "updated_on": "2024-01-16T12:58:43.552916+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5062": "your name",
+                            "field_5063": "",
+                            "field_5064": 3287,
+                            "field_5066": [
+                                17,
+                                18,
+                                19,
+                                21,
+                                15
+                            ],
+                            "field_5067": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 541,
+                    "name": "Settings",
+                    "order": 5,
+                    "fields": [
+                        {
+                            "id": 5059,
+                            "type": "text",
+                            "name": "Key",
+                            "order": 0,
+                            "primary": true,
+                            "text_default": ""
+                        },
+                        {
+                            "id": 5060,
+                            "type": "long_text",
+                            "name": "Value",
+                            "order": 1,
+                            "primary": false
+                        },
+                        {
+                            "id": 5061,
+                            "type": "file",
+                            "name": "Image",
+                            "order": 2,
+                            "primary": false
+                        },
+                        {
+                            "id": 5069,
+                            "type": "long_text",
+                            "name": "Notes",
+                            "order": 3,
+                            "primary": false
+                        }
+                    ],
+                    "views": [
+                        {
+                            "id": 2152,
+                            "type": "grid",
+                            "name": "Grid",
+                            "order": 1,
+                            "ownership_type": "collaborative",
+                            "owned_by": null,
+                            "filter_type": "AND",
+                            "filters_disabled": false,
+                            "filters": [],
+                            "filter_groups": [],
+                            "sortings": [],
+                            "group_bys": [],
+                            "decorations": [],
+                            "public": false,
+                            "row_identifier_type": "id",
+                            "field_options": [
+                                {
+                                    "id": 14563,
+                                    "field_id": 5059,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14564,
+                                    "field_id": 5060,
+                                    "width": 499,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14565,
+                                    "field_id": 5061,
+                                    "width": 200,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                },
+                                {
+                                    "id": 14603,
+                                    "field_id": 5069,
+                                    "width": 497,
+                                    "hidden": false,
+                                    "order": 32767,
+                                    "aggregation_type": "",
+                                    "aggregation_raw_type": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "id": 6,
+                            "order": "6.00000000000000000000",
+                            "created_on": "2022-06-23T12:44:02+00:00",
+                            "updated_on": "2024-01-16T12:59:29.584100+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Title",
+                            "field_5060": "New Chronomap",
+                            "field_5061": [],
+                            "field_5069": "title for the sidebar & directory page"
+                        },
+                        {
+                            "id": 7,
+                            "order": "7.00000000000000000000",
+                            "created_on": "2022-06-23T12:44:21+00:00",
+                            "updated_on": "2024-01-16T12:59:30.910587+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Subtitle",
+                            "field_5060": "from Template",
+                            "field_5061": [],
+                            "field_5069": "title for the sidebar & directory page"
+                        },
+                        {
+                            "id": 8,
+                            "order": "8.00000000000000000000",
+                            "created_on": "2022-06-23T15:36:39+00:00",
+                            "updated_on": "2024-01-16T12:59:46.615568+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Infobar_Title",
+                            "field_5060": "",
+                            "field_5061": [],
+                            "field_5069": "optional"
+                        },
+                        {
+                            "id": 9,
+                            "order": "9.00000000000000000000",
+                            "created_on": "2022-06-23T15:36:40+00:00",
+                            "updated_on": "2024-01-16T12:59:47.396072+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Infobar_Subtitle",
+                            "field_5060": "",
+                            "field_5061": [],
+                            "field_5069": "optional"
+                        },
+                        {
+                            "id": 1,
+                            "order": "9.50000000000000000000",
+                            "created_on": "2020-12-17T12:55:31+00:00",
+                            "updated_on": "2024-01-16T13:06:14.061155+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Infobar_Content",
+                            "field_5060": "This is a sample usage for a new chronomap in Chronomaps.org\n\n1. Go into your Baserow admin page\n2. Enter your name and details in the Authors table\n3. Change the default settings in the Settings table\n4. Use the contribute interface on your chronomap url to create posts\n5. On the Content tab you can edit and publish both your own posts and those you may receive from others.\n\nmake it your own.",
+                            "field_5061": [],
+                            "field_5069": "the info bar appears automatically  for new visitors"
+                        },
+                        {
+                            "id": 28,
+                            "order": "9.66666666666666607455",
+                            "created_on": "2024-01-16T13:06:26.599832+00:00",
+                            "updated_on": "2024-01-16T13:07:49.693591+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Allow_Contributions",
+                            "field_5060": "True",
+                            "field_5061": [],
+                            "field_5069": "(True/False) False = disable option to contribute posts through the chronomap interface"
+                        },
+                        {
+                            "id": 10,
+                            "order": "10.00000000000000000000",
+                            "created_on": "2022-06-26T08:37:52+00:00",
+                            "updated_on": "2023-12-20T07:52:49.610962+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Contribute_Message",
+                            "field_5060": "Hello!!\n\nPlease take the time to go through the existing posts in this chronomap and consider adding your own perspective on this storyline, inspired by the Back To The Future cinematic trilogy.",
+                            "field_5061": [],
+                            "field_5069": "1 paragraph staring the contribution flow"
+                        },
+                        {
+                            "id": 26,
+                            "order": "10.50000000000000000000",
+                            "created_on": "2023-12-04T09:47:29.290383+00:00",
+                            "updated_on": "2023-12-10T08:09:45.345166+00:00",
+                            "last_modified_by": "adam.kariv@gmail.com",
+                            "field_5059": "Default_Map_View",
+                            "field_5060": "",
+                            "field_5061": [],
+                            "field_5069": "if empty, zoomed out to furthest extent, you can use: https://labs.mapbox.com/location-helper/#4.07/40.99/14.23/0/1"
+                        },
+                        {
+                            "id": 11,
+                            "order": "11.00000000000000000000",
+                            "created_on": "2022-08-11T09:20:11+00:00",
+                            "updated_on": "2024-01-16T13:09:57.379680+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Logo",
+                            "field_5060": null,
+                            "field_5061": [
+                                {
+                                    "name": "EEmYs6HI3cHKjmaq7f5Eqt4WbFu10CWK_ae83562ae27bb9717c83c5d46c351df10b26b3a9aee77bb1dc7b51c07360c487.png",
+                                    "visible_name": "image.png",
+                                    "original_name": "EEmYs6HI3cHKjmaq7f5Eqt4WbFu10CWK_ae83562ae27bb9717c83c5d46c351df10b26b3a9aee77bb1dc7b51c07360c487.png"
+                                }
+                            ],
+                            "field_5069": null
+                        },
+                        {
+                            "id": 25,
+                            "order": "11.33333333333333392545",
+                            "created_on": "2023-12-03T08:25:01.732631+00:00",
+                            "updated_on": "2024-01-16T13:13:37.867161+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Thumbnail",
+                            "field_5060": "",
+                            "field_5061": [
+                                {
+                                    "name": "EhSc8ONs3qqPZNexNJCz6ZlsTaDvgJDj_3037745172633ac283e8672e5baa24a1965002d4801b5506a517eb8211b628d8.png",
+                                    "visible_name": "image.png",
+                                    "original_name": "EhSc8ONs3qqPZNexNJCz6ZlsTaDvgJDj_3037745172633ac283e8672e5baa24a1965002d4801b5506a517eb8211b628d8.png"
+                                }
+                            ],
+                            "field_5069": "for directory & sharing (1200 x 630px)"
+                        },
+                        {
+                            "id": 19,
+                            "order": "11.50000000000000000000",
+                            "created_on": "2023-11-29T14:06:17.139927+00:00",
+                            "updated_on": "2023-12-10T08:09:54.362743+00:00",
+                            "last_modified_by": "adam.kariv@gmail.com",
+                            "field_5059": "Parent_Link",
+                            "field_5060": null,
+                            "field_5061": [],
+                            "field_5069": "empty = goes to directory page"
+                        },
+                        {
+                            "id": 12,
+                            "order": "12.00000000000000000000",
+                            "created_on": "2023-11-13T07:58:19.405634+00:00",
+                            "updated_on": "2024-01-16T12:44:47.624538+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Map_Style",
+                            "field_5060": "mapbox://styles/atlasmedliq/clrgbp9pu00ef01pf4o3680yc",
+                            "field_5061": [],
+                            "field_5069": "From Mapbox"
+                        },
+                        {
+                            "id": 18,
+                            "order": "12.50000000000000000000",
+                            "created_on": "2023-11-29T14:05:34.329749+00:00",
+                            "updated_on": "2024-01-16T09:00:41.961015+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Background_Map_Style",
+                            "field_5060": "mapbox://styles/atlasmedliq/clr4tn7gd01fq01qr4hvzalwk",
+                            "field_5061": [],
+                            "field_5069": "From Mapbox"
+                        },
+                        {
+                            "id": 13,
+                            "order": "13.00000000000000000000",
+                            "created_on": "2023-11-13T07:58:28.958191+00:00",
+                            "updated_on": "2023-12-10T08:10:15.500487+00:00",
+                            "last_modified_by": "adam.kariv@gmail.com",
+                            "field_5059": "Mapbox_Key",
+                            "field_5060": "pk.eyJ1IjoiYXRsYXNtZWRsaXEiLCJhIjoiY2tpbXgzNW5qMHhhcjJ5cGtydHpkNnJqYyJ9.vfietFuvTA8S1vaGlm3CUQ",
+                            "field_5061": [],
+                            "field_5069": "From Mapbox"
+                        },
+                        {
+                            "id": 16,
+                            "order": "13.50000000000000000000",
+                            "created_on": "2023-11-29T11:33:35.170683+00:00",
+                            "updated_on": "2023-12-10T08:10:19.599078+00:00",
+                            "last_modified_by": "adam.kariv@gmail.com",
+                            "field_5059": "Show_Tooltips",
+                            "field_5060": "false",
+                            "field_5061": [],
+                            "field_5069": "optionally hide the tooltips from appearing on the timeline and map"
+                        },
+                        {
+                            "id": 17,
+                            "order": "14.00000000000000000000",
+                            "created_on": "2023-11-29T14:01:18.057935+00:00",
+                            "updated_on": "2024-01-16T14:16:10.980441+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Alt_Timestamp_Label",
+                            "field_5060": "speculated",
+                            "field_5061": [],
+                            "field_5069": "additional timestamp as metadata for posts (leave empty to hide)"
+                        },
+                        {
+                            "id": 15,
+                            "order": "15.00000000000000000000",
+                            "created_on": "2023-11-28T15:59:25.983574+00:00",
+                            "updated_on": "2023-12-10T08:10:38.182759+00:00",
+                            "last_modified_by": "adam.kariv@gmail.com",
+                            "field_5059": "Post_Date_Format",
+                            "field_5060": "day",
+                            "field_5061": [],
+                            "field_5069": "empty=by timeline  /  choose date specificity: ( hour / day / month / year )"
+                        },
+                        {
+                            "id": 22,
+                            "order": "16.00000000000000000000",
+                            "created_on": "2023-11-29T14:54:20.101421+00:00",
+                            "updated_on": "2023-12-10T08:10:44.145159+00:00",
+                            "last_modified_by": "adam.kariv@gmail.com",
+                            "field_5059": "Alt_Date_Format",
+                            "field_5060": "day",
+                            "field_5061": [],
+                            "field_5069": "empty=by timeline  /  choose date specificity: ( hour / day / month / year )"
+                        },
+                        {
+                            "id": 23,
+                            "order": "17.00000000000000000000",
+                            "created_on": "2023-11-30T11:13:31.245627+00:00",
+                            "updated_on": "2024-01-16T14:27:20.335427+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Primary_Color",
+                            "field_5060": "#EA0038",
+                            "field_5061": [],
+                            "field_5069": "Default: #EA0038"
+                        },
+                        {
+                            "id": 24,
+                            "order": "18.00000000000000000000",
+                            "created_on": "2023-11-30T11:13:43.873995+00:00",
+                            "updated_on": "2024-01-16T14:27:24.604985+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Secondary_Color",
+                            "field_5060": "#6E0023",
+                            "field_5061": [],
+                            "field_5069": "Default: #6E0023"
+                        },
+                        {
+                            "id": 27,
+                            "order": "18.50000000000000000000",
+                            "created_on": "2023-12-18T19:50:40.648100+00:00",
+                            "updated_on": "2024-01-16T14:16:34.946811+00:00",
+                            "last_modified_by": "adam.kariv@gmail.com",
+                            "field_5059": "New_Entry_Form",
+                            "field_5060": "https://baserow.datacity.org.il/form/npOTxV5NdvSYQdE1b1p0HhUxT0tF1mmWj4AJU5K1Yvg",
+                            "field_5061": [],
+                            "field_5069": "Link for the shared url of the 'new entry' form in the Content table"
+                        },
+                        {
+                            "id": 2,
+                            "order": "19.00000000000000000000",
+                            "created_on": "2020-12-17T12:55:31+00:00",
+                            "updated_on": "2023-12-12T16:24:40.820599+00:00",
+                            "last_modified_by": "mushon@shual.com",
+                            "field_5059": "Inline_CSS",
+                            "field_5060": "",
+                            "field_5061": [],
+                            "field_5069": "CSS added to the header of the app"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
